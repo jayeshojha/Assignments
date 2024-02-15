@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin-left: 10px;
+        }
+
+        ul li {
+            margin-left: 20px;
+            list-style: disc;
+        }
+        div [class*="box"]{
+            height: 130px;
+            width: 190px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0.2px 0.2px 1px black;
+        }
+        .container{
+            height: 400px;
+            width: 650px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-around;
+            margin: 0 auto;
+        }
+        .bx-1{
+            background-color: rgb(74, 74, 74);
+            color: white;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70px;
+        }
+        .bx-2{
+            padding-top: 5px;
+            font-size: xx-small;
+            padding-bottom: 5px;
+        }
+        .bx-1-1{
+            display: flex;
+            padding-bottom: 5px;
+        }
+        .bx-1-1-1{
+            padding: 1px 5px;
+            border: 1px solid black;
+            font-size: x-small; 
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Q.1 What are the benefits of using CSS?</h1>
+    <h4>Ans:-</h4>
+    <p>
+        There are many benifits of css these benifits are :-
+    <ul>
+        <li>Search engine optimization benefits</li>
+        <li>To many color options</li>
+        <li>More formatting options</li>
+        <li>Easy to maintain</li>
+        <li>Time-Saving </li>
+    </ul>
+    </p>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <h1>Q.2 What are the disadvantages of CSS?</h1>
+    <h4>Ans:-</h4>
+    <p>
+    <ul>
+        <li>Limited support for older browsers</li>
+        <li>Differences in display on various devices</li>
+        <li>Device-specific compatibility challenges</li>
+        <li>Maintenance difficulties in large projects</li>
+        <li>Challenges in debugging complex layouts</li>
+        <li>Challenges in achieving pixel-perfect design</li>
+    </ul>
+    </p>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <h1>Q.3 What is the difference between CSS2 and CSS3?</h1>
+    <h4>Ans:-</h4>
+    <h5>Here are major difference between CSS2 and CSS3</h5>
+    <p>
+        CSS3 is updated virson of CSS2
+    </p>
+    <p>
+        CSS3 adds a number of new features to CSS2, including:
+    <ul>
+        <li>Flexbox</li>
+        <li>Grid</li>
+        <li>Animations</li>
+        <li>Transitions</li>
+        <li>Improved support for media queries</li>
+    </ul>
+    </p>
+    <p>
+        Overall, CSS3 is a more powerful and versatile stylesheet language than CSS2. <br> It offers a number of new
+        features that make it easier to create responsive, dynamic,<br> and visually appealing web pages
+    </p>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <h1>Q.4 Name a few CSS style components</h1>
+    <h4>Ans:-</h4>
+    <p>
+    <ul>
+        <li>Selector</li>
+        <li>Property</li>
+        <li>Value</li>
+    </ul>
+    </p>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <h1>Q.5 • What do you understand by CSS opacity?</h1>
+    <h4>Ans:-</h4>
+    <p>
+        The CSS opacity property is used to specify the transparency of an element. In simple word, you can say that it
+        specifies the clarity of the image.
+    </p>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <h1>Q.6 How can the background color of an element be changed?</h1>
+    <h4>Ans:-</h4>
+    <p>
+        By using background color property we can change the background color of an element.
+    </p>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <h1>Q.7 How can image repetition of the backup be controlled?</h1>
+    <h4>Ans:-</h4>
+    <p>
+        By using background repeat property we can control image repetation property.
+    </p>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <h1>Q.8 What is the use of the background-position property?</h1>
+    <h4>Ans:-</h4>
+    <p>
+        background-position property is used for set the position of background image.
+    </p>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <h1>Q.9 Which property controls the image scroll in the background?</h1>
+    <h4>Ans:-</h4>
+    <p>
+        background-attachment property is used for image scroll in the background.
+    </p>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <h1>Q.10 Why should background and color be used as separate properties?</h1>
+    <h4>Ans:-</h4>
+    <p>
+    <ul>
+        <li> It enhances the legibility of style sheets. The background property is a complex property in CSS, and if it
+            is combined with color, the complexity will further increase.</li>
+        <li>Color is an inherited property while the background is not. So this can make confusion further.</li>
+    </ul>
+    </p>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <h1>Q.11 How to center block elements using CSS1?</h1>
+    <h4>Ans:-</h4>
+    <p>
+        There are two ways of centering block level elements: 1. By setting the properties margin-left and margin-right to auto and width to some explicit value: BODY {width: 30em; background: cyan;} P {width: 22em; margin-left: auto; margin-right: auto}
+    </p>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <h1>Q.12 How to maintain the CSS specifications?</h1>
+    <h4>Ans:-</h4>
+    <p>
+        The CSS specifications are maintained by the World Wide Web Consortium (W3C). 
+    </p>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <h1>Q.13 What are the ways to integrate CSS as a web page?</h1>
+    <h4>Ans:-</h4>
+    <p>
+        There are three ways to implemnet css in  web page :-
+        <ul>
+            <li>Internal css (by using css in tags)</li>
+            <li>inline css(by using style tag in head section) </li>
+            <li>external css(by creating another css file and link that with html page)</li>
+        </ul>
+    </p>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <h1>Q.14 What is embedded style sheets</h1>
+    <h4>Ans:-</h4>
+    <p>
+      Embedded style sheets are located in the header of a page, and apply to that entire page.
+    </p>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <h1>Q.15 What are the external style sheets?</h1>
+    <h4>Ans:-</h4>
+    <p>
+        An external style sheet is a separate text file that each page in the web site can link to it in order to receive it's instructions.
+    </p>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <h1>Q.16 What are the advantages and disadvantages of using external style sheets?</h1>
+    <h4>Ans:-</h4>
+    <p>There are several advantages to using an external style sheet :-</p>
+    <ul>
+        <li>An external style sheet allows you to separate the content of your website (HTML) from the presentation (CSS). </li>
+        <li>Reusable styles: An external style sheet can be reused across multiple pages and websites</li>
+        <li>saving time and making it easier to maintain</li>
+        <li>An external style sheet is only loaded once, even if it is used on multiple pages. This can improve the performance of your website</li>
+    </ul>
+    <p>There are also some disadvantages to using an external style sheet :-</p>
+    <ul>
+        <li>Limited control: With an external style sheet, you have less control over the specific elements on a page, as the styles are applied globally to all elements that use the same class or ID.</li>
+        <li> It can be harder to override the styles in an external style sheet, as they are applied globally. To override a style, you need to use more specific selectors or use the !important declaration, which can make your style sheet more complex and difficult to maintain.</li>
+    </ul>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <h1>Q.17 What is the meaning of the CSS selector</h1>
+    <h4>Ans:-</h4>
+    <p>
+        CSS selectors are used to select the content you want to style. Selectors are the part of CSS rule set. CSS selectors select HTML elements according to its id, class, type, attribute etc.
+        There are several different types of selectors in CSS.
+        <ul>
+            <li>Basic selector</li>
+            <li>Combinator Selector</li>
+            <li>Group selector</li>
+            <li>Psuedo selector</li>
+        </ul>
+    </p>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <h1>Q.18 What are the media types allowed by CSS?</h1>
+    <h4>Ans:-</h4>
+    <p>
+            there are some media types allowed by css:-
+            <ul>
+                <li>All</li>
+                <li>Print</li>
+                <li>Media</li>
+                <li>Screen</li>
+                <li>Braille</li>
+                <li>Paper embossing</li>
+                <li>Handheld</li>
+                <li>Projection</li>
+                <li>Speech</li>
+            </ul>
+    </p>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <h1>Q.19 What is the rule set?</h1>
+    <h4>Ans:-</h4>
+    <p>
+        A CSS ruleset consists of an element selector and a properties declaration block.
+        <ul>
+            <li>A selector selects HTML elements. In other words, developers use CSS selectors in a stylesheet to select the HTML elements they which to style.</li>
+            <li>A CSS declaration consists of a CSS property name and value separated by a colon (:).</li>
+        </ul>
+    </p>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <h1>Q.20 Create Layouts:-</h1>
+    <h4>Ans:-</h4>
+        <div class="container">
+            <div class="box">
+                <div class="bx-1">Thumbnil</div>
+                <div class="bx-2"><p>This is a wider card with supporting text below as a natural lead into additional contaent this content is little-bit longer</p>
+                </div>
+                    <div class="bx-1-1">
+                       <div class="bx-1-1-1">View</div>
+                       <div class="bx-1-1-1">Edit</div>
+                    </div>
+            </div>
+            <div class="box">
+                <div class="bx-1">Thumbnil</div>
+                <div class="bx-2"><p>This is a wider card with supporting text below as a natural lead into additional contaent this content is little-bit longer</p>
+                </div>
+                    <div class="bx-1-1">
+                       <div class="bx-1-1-1">View</div>
+                       <div class="bx-1-1-1">Edit</div>
+                    </div>
+            </div>
+            <div class="box">
+                <div class="bx-1">Thumbnil</div>
+                <div class="bx-2"><p>This is a wider card with supporting text below as a natural lead into additional contaent this content is little-bit longer</p>
+                </div>
+                    <div class="bx-1-1">
+                       <div class="bx-1-1-1">View</div>
+                       <div class="bx-1-1-1">Edit</div>
+                    </div>
+            </div>
+            <div class="box">
+                <div class="bx-1">Thumbnil</div>
+                <div class="bx-2"><p>This is a wider card with supporting text below as a natural lead into additional contaent this content is little-bit longer</p>
+                </div>
+                    <div class="bx-1-1">
+                       <div class="bx-1-1-1">View</div>
+                       <div class="bx-1-1-1">Edit</div>
+                    </div>
+            </div>
+            <div class="box">
+                <div class="bx-1">Thumbnil</div>
+                <div class="bx-2"><p>This is a wider card with supporting text below as a natural lead into additional contaent this content is little-bit longer</p>
+                </div>
+                    <div class="bx-1-1">
+                       <div class="bx-1-1-1">View</div>
+                       <div class="bx-1-1-1">Edit</div>
+                    </div>
+            </div>
+            <div class="box">
+                <div class="bx-1">Thumbnil</div>
+                <div class="bx-2"><p>This is a wider card with supporting text below as a natural lead into additional contaent this content is little-bit longer</p>
+                </div>
+                    <div class="bx-1-1">
+                       <div class="bx-1-1-1">View</div>
+                       <div class="bx-1-1-1">Edit</div>
+                    </div>
+            </div>
+        </div>
+</body>
+
+</html>
