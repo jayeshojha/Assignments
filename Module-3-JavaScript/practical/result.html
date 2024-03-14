@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: violet;
+        }
+
+        .container {
+            padding: 50px;
+            border-radius: 10px;
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container-1 {
+            display: flex;
+            gap: 90px;
+        }
+
+        .box-1 {
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .box-2 {
+            display: flex;
+            gap: 10px;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+
+        input {
+            height: 20px;
+        }
+
+        .button {
+            height: 25px;
+            width: 70px;
+            margin-right: -100px;
+        }
+
+        .container-2 {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #Total {
+            padding: 5px 10px;
+            border-radius: 2px;
+            background-color: white;
+            color: blue;
+        }
+
+        #Percentage {
+            padding: 5px 10px;
+            border-radius: 2px;
+            background-color: white;
+            color: blue;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <span>Marksheet for information Technology</span>
+        <span>Enter marks</span>
+        <div class="container-1">
+            <ol class="box-1">
+                <li>C language</li>
+                <li>C++ language</li>
+                <li>Database</li>
+                <li>Html</li>
+                <li>Css</li>
+                <li>php</li>
+                <li>Core Java</li>
+            </ol>
+            <form action="" onsubmit="Result()">
+                <div class="box-2">
+                    <input type="number" id="input-1" value="0" min="0" max="50">
+                    <input type="number" id="input-2" value="0">
+                    <input type="number" id="input-3" value="0">
+                    <input type="number" id="input-4" value="0">
+                    <input type="number" id="input-5" value="0">
+                    <input type="number" id="input-6" value="0">
+                    <input type="number" id="input-7" value="0">
+                </div>
+        </div>
+        <input type="submit" value="submit" class="button">
+        </form>
+        <div class="container-2">
+            <span>Total Result is: <span id="Total"></span> /350</span>
+            <span>Percentage is: <span id="Percentage"></span>%</span>
+        </div>
+    </div>
+    <script>
+        function Result() {
+            event.preventDefault();
+            let input1 = document.querySelector("#input-1").value;
+            let input2 = document.querySelector("#input-2").value;
+            let input3 = document.querySelector("#input-3").value;
+            let input4 = document.querySelector("#input-4").value;
+            let input5 = document.querySelector("#input-5").value;
+            let input6 = document.querySelector("#input-6").value;
+            let input7 = document.querySelector("#input-7").value;
+            let sum = parseInt(input1) + parseInt(input2) + parseInt(input3) + parseInt(input4) + parseInt(input5) + parseInt(input6) + parseInt(input7);
+            let total = document.getElementById('Total');
+            total.innerText = sum;
+            let Totalnum = 350;
+            let Percentage = (sum / Totalnum) * 100;
+            let box = document.getElementById('Percentage');
+            box.innerText = Math.floor(Percentage);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            background-color: blueviolet;
+        }
+        .container{
+            padding: 50px;
+            border-radius: 10px;
+            background-color: black;
+            color: white;
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+        .box-1{
+            display: flex;
+            gap: 50px;
+        }
+        .box-1-1{
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+        .box-1-2{
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+        .box-2{
+            display: flex;
+            justify-content: space-between;
+            gap: 50px;
+            width: 100%;
+        }
+        .box-2-1{
+            width: 40%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .box-2-1-1{
+            width: 23%;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        button{
+            background-color: green;
+        }
+        .text{
+          font-size: 20px;
+        }
+        input{
+            height: 30px;
+        }
+        .box-2-2{
+            border: 1px solid black;
+            width: 40%;
+            background-color: white;
+            color: black;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+     <div class="container">
+        <h1>Math Operations</h1>
+        <div class="box-1">
+            <div class="box-1-1">
+               <span class="text">Eneter first number:</span>
+               <span class="text">Eneter second number:</span>
+            </div>
+            <div class="box-1-2">
+                <input type="number" name="" id="input-1">
+                <input type="number" name="" id="input-2">
+            </div>
+        </div>
+        <div class="box-2">
+            <div class="box-2-1">
+                <button class="box-2-1-1" onclick="addition()">+</button>
+                <button class="box-2-1-1" onclick="substraction()">-</button>
+                <button class="box-2-1-1" onclick="multiple()">*</button>
+                <button class="box-2-1-1" onclick="division()">/</button>
+            </div>
+            <div class="box-2-2" id="Ans">
+            </div>
+        </div>
+     </div>
+
+<script >
+    function addition(){
+        let input1 = document.getElementById('input-1').value;
+        let num1 = parseInt(input1);
+        let input2 = document.getElementById('input-2').value;
+        let num2 = parseInt(input2);
+        let box = document.getElementById('Ans');
+          box.innerText = num1+num2;
+     }
+     function substraction(){
+        let input1 = document.getElementById('input-1').value;
+        let num1 = parseInt(input1); 
+        let input2 = document.getElementById('input-2').value;
+        let num2 = parseInt(input2);
+        let box = document.getElementById('Ans');
+          box.innerText = num1-num2;
+     }
+     function multiple(){
+        let input1 = document.getElementById('input-1').value;
+        let num1 = parseInt(input1); 
+        let input2 = document.getElementById('input-2').value;
+        let num2 = parseInt(input2);
+        let box = document.getElementById('Ans');
+          box.innerText = num1*num2;
+     }
+     function division(){
+        let input1 = document.getElementById('input-1').value;
+        let num1 = parseInt(input1);
+        let input2 = document.getElementById('input-2').value;
+        let num2 = parseInt(input2);
+        let box = document.getElementById('Ans');
+          box.innerText = num1/num2;
+     }
+</script>
+</body>
+</html>
