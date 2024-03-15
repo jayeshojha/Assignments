@@ -68,8 +68,53 @@
             display: flex;
             gap: 100px;
         }
-        .translate{
-            transform: translateX(-100px);
+        .translate-0{
+            transform: translateX(-130px);
+            transition: 0.5s ease-in;
+        }
+        .translate-1{
+            transform: translateX(-260px);
+            transition: 0.5s ease-in;
+        }
+        .translate-2{
+            transform: translateX(-390px);
+            transition: 0.5s ease-in;
+        }
+        .translate-3{
+            transform: translateX(-520px);
+            transition: 0.5s ease-in;
+        }
+        .translate-4{
+            transform: translateX(-650px);
+            transition: 0.5s ease-in;
+        }
+        .translate-5{
+            transform: translateX(0px);
+            transition: 1s ease-in;
+        }
+        .translate-6{
+            transform: translateX(130px);
+            transition: 0.5s ease-in;
+        }
+        .translate-7{
+            transform: translateX(260px);
+            transition: 0.5s ease-in;
+        }
+        .translate-8{
+            transform: translateX(390px);
+            transition: 0.5s ease-in;
+        }
+        .translate-9{
+            transform: translateX(520px);
+            transition: 0.5s ease-in;
+        }
+        .translate-10{
+            transform: translateX(650px);
+            transition: 0.5s ease-in;
+        }
+        .translate-11{
+            transform: translateX(0px);
+            transition: 1s ease-in;
         }
     </style>
 </head>
@@ -93,12 +138,121 @@
       <script>
          let icon1 = document.querySelector('.icon-1');
           let icon2 = document.querySelector('.icon-2')
+          var i = 0;
           icon1.addEventListener('click',()=>{
-                let box = document.querySelectorAll('#box');
-                 box[0].classList.add('translate');
-                 box[1].classList.add('translate');
-                 box[2].classList.add('translate');
-                 box[2].classList.add('translate');
-                 box[4].classList.add('translate');
+            let scrollcontainer = document.querySelector('continer-2')
+                let box = Array.from(document.querySelectorAll('#box'));
+                if(i == 0){
+                 box[0].classList.add(`translate-${i}`);
+                 box[1].classList.add(`translate-${i}`);
+                 box[2].classList.add(`translate-${i}`);
+                 box[3].classList.add(`translate-${i}`);
+                 box[4].classList.add(`translate-${i}`);
+                 console.log(i);
+                 i++
+                }
+                else if (i==1){
+                    box[0].classList.replace('translate-0','translate-1');
+                 box[1].classList.replace('translate-0','translate-1');
+                 box[2].classList.replace('translate-0','translate-1');
+                 box[3].classList.replace('translate-0','translate-1');
+                 box[4].classList.replace('translate-0','translate-1');
+                 i++;
+                }
+                else if(i==2){
+                    box[0].classList.replace('translate-1','translate-2');
+                 box[1].classList.replace('translate-1','translate-2');
+                 box[2].classList.replace('translate-1','translate-2');
+                 box[3].classList.replace('translate-1','translate-2');
+                 box[4].classList.replace('translate-1','translate-2');
+                 i++
+                }
+                else if(i==3){
+                    box[0].classList.replace('translate-2','translate-3');
+                 box[1].classList.replace('translate-2','translate-3');
+                 box[2].classList.replace('translate-2','translate-3');
+                 box[3].classList.replace('translate-2','translate-3');
+                 box[4].classList.replace('translate-2','translate-3');
+                 i++
+                }
+                else if(i==4){
+                    box[0].classList.replace('translate-3','translate-4');
+                 box[1].classList.replace('translate-3','translate-4');
+                 box[2].classList.replace('translate-3','translate-4');
+                 box[3].classList.replace('translate-3','translate-4');
+                 box[4].classList.replace('translate-3','translate-4');
+                 i++;
+                }
+                else if(i == 5)
+                {
+                 box[0].classList.remove('translate-4');
+                 box[1].classList.remove('translate-4');
+                 box[2].classList.remove('translate-4');
+                 box[3].classList.remove('translate-4');
+                 box[4].classList.remove('translate-4');
+                } else{
+                    i = 0;
+                }        
+            })
+            i = 5;
+          icon2.addEventListener('click',()=>{
+            let scrollcontainer = document.querySelector('continer-2')
+                let box = Array.from(document.querySelectorAll('#box'));
+                if(i == 5){
+                 box[0].classList.add('translate-6');
+                 box[1].classList.add('translate-6');
+                 box[2].classList.add('translate-6');
+                 box[3].classList.add('translate-6');
+                 box[4].classList.add('translate-6');
+                 console.log(i);
+                 i--
+                }
+                else if (i==4){
+                    box[0].classList.replace('translate-6','translate-7');
+                 box[1].classList.replace('translate-6','translate-7');
+                 box[2].classList.replace('translate-6','translate-7');
+                 box[3].classList.replace('translate-6','translate-7');
+                 box[4].classList.replace('translate-6','translate-7');
+                 i--;
+                }
+                else if(i==3){
+                    box[0].classList.replace('translate-7','translate-8');
+                 box[1].classList.replace('translate-7','translate-8');
+                 box[2].classList.replace('translate-7','translate-8');
+                 box[3].classList.replace('translate-7','translate-8');
+                 box[4].classList.replace('translate-7','translate-8');
+                 i--;
+                }
+                else if(i==2){
+                    box[0].classList.replace('translate-8','translate-9');
+                 box[1].classList.replace('translate-8','translate-9');
+                 box[2].classList.replace('translate-8','translate-9');
+                 box[3].classList.replace('translate-8','translate-9');
+                 box[4].classList.replace('translate-8','translate-9');
+                 i--;
+                }
+                else if(i==1){
+                    box[0].classList.replace('translate-9','translate-10');
+                 box[1].classList.replace('translate-9','translate-10');
+                 box[2].classList.replace('translate-9','translate-10');
+                 box[3].classList.replace('translate-9','translate-10');
+                 box[4].classList.replace('translate-9','translate-10');
+                 i--;
+                }
+                else if(i == 0)
+                {
+                 box[0].classList.remove('translate-10');
+                 box[1].classList.remove('translate-10');
+                 box[2].classList.remove('translate-10');
+                 box[3].classList.remove('translate-10');
+                 box[4].classList.remove('translate-10');
+                 i--;
+                 i = 5;
+                }
+                else{
+                }
+               
+
+                 
           })
       </script>
