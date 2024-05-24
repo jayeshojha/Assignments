@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="practical.css">
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+    <div class="popup-box" >
+        <div class="box" id="box">
+        </div>
+        <ul class="popup" id="popup">
+            <i class="fa-solid fa-xmark icon" id="icon"></i>
+            <h3>NOTE : Apply all this assignment quetions in this mini project</h3>
+            <li>Create a program to hide/show the password</li>
+            <li>Create a program that will select all the classes and loop over and whenever i click the
+                button the alert should show</li>
+            <li>Create a responsive header using proper JavaScript</li>
+            <li>Create a form and validate using JavaScript </li>
+            <li>Create a modal box using css and Js with three buttons</li>
+            <li>Use external js library to show slider</li>
+            <li>Prevent the browser when i click the form submit button</li>
+        </ul>
+    </div>
+    <header class="header">
+        <nav class="nav-bar" id="navbar">
+            <div class="nav-1">LOGO</div>
+            <ul class="nav-2">
+                <li>Menu</li>
+                <li>Help</li>
+                <li>Home</li>
+                <li>Abou us</li>
+            </ul>
+        </nav>
+        <nav class="nav-bar" id="navbar1" style="display: none;">
+            <div class="nav-4">LOGO</div>
+            <i class="fa-solid fa-bars" id="icon1"></i>
+            <ul class="nav-3" style="display: none;" id="nav3">
+                <li>Menu</li>
+                <li>Help</li>
+                <li>Home</li>
+                <li>Abou us</li>
+            </ul>
+        </nav>
+        <div class="class1 font-1">Class 1</div>
+        <div class="class1 font-2">Class 2</div>
+        <div class="class1 font-3">Class 3</div>
+        <div class="btn-box">
+            <h1 style="color: white;">Click this button and got an aleart message</h1>
+            <button class="button1">Click me</button>
+        </div>
+    </header>
+    <section class="slider">
+        <div class="slider-bx">
+            <div class="left"><i class="fa-solid fa-chevron-left"></i></div>
+            <div class="slider-ex">
+                <div class="slider-box">
+                    <div class="box-2 img-box"><img src="images (2).jpeg" alt="" class="image"></div>
+                    <div class="box-3 img-box"><img src="images (3).jpeg" alt="" class="image"></div>
+                    <div class="box-4 img-box"><img src="images (4).jpeg" alt="" class="image"></div>
+                    <div class="box-4 img-box"><img src="the-most-beautiful-picture-of-nature-wallpaper-preview.jpg"
+                            alt="" class="image"></div>
+                    <div class="box-4 img-box"><img src="images (6).jpeg" alt="" class="image"></div>
+                    <div class="box-4 img-box"><img src="images (7).jpeg" alt="" class="image"></div>
+                    <div class="box-5 img-box"><img src="download.jpeg" alt="" class="image"></div>
+                </div>
+            </div>
+            <div class="right"><i class="fa-solid fa-chevron-right"></i></div>
+        </div>
+        <div class="checks">
+            <input type="radio" name="slider" checked>
+            <input type="radio" name="slider">
+            <input type="radio" name="slider">
+        </div>
+    </section>
+    <section class="form-section">
+        <form action="" class="form1" id="S-form">
+            <div class="section-1">
+            <div class="lebal">
+                <label for="FirstName">FirstName</label>
+                <label for="LastName">LastName</label>
+                <label for="Email">Email</label>
+                <label for="Password">Password</label>
+            </div>
+            <div class="inp">
+               <span class="info"><input type="name" name="FirstName" id="FirstName" class="inp-tag"><span class="Text"></span></span> 
+                <span class="info"><input type="name" name="LastName" id="LastName" class="inp-tag" ><span class="Text"></span></span>
+                <span class="info"><input type="email" name="email" id="Email" class="inp-tag" ><span class="Text"></span></span>
+                <span class="info"><input type="password" name="" id="Password" class="inp-tag" ><span class="Text"></span></span>
+            </div>
+    </div>
+    <label for="Show">Show password</label>
+            <input type="checkbox" id="Show">
+            <input type="submit" name="" id="Submit">
+        </form>
+        <button class="button1 btn2">Popup-button</button>
+    </section>
+    <div class="popup-box1" style="display: none;">
+        <div class="box" id="box1">
+        </div>
+        <ul class="popup1" id="popup1">
+            <i class="fa-solid fa-xmark icon" id="icon2"></i>
+            <div class="buttons">
+             <button class="button1 btn">Button-1</button>
+             <button class="button1 btn">button-2</button>
+             <button class="button1 btn">Button-3</button>
+            </div>
+        </ul>
+    </div>
+    <script src="Practical.js">
+    </script>
+    <script>
+
+        // Creat a slider usign js librery
+        $('.right').on('click',()=>{
+            $('.slider-box').animate({
+            scrollLeft: '+=500px'
+        })
+        })
+        $('.left').on('click',()=>{
+            $('.slider-box').animate({
+            scrollLeft: '-=500px'
+        })
+        })
+
+    </script>
+</body>
+
+</html>
