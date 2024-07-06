@@ -1,0 +1,165 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img{
+   width: 100%;
+   height: 100%;
+}
+.w-1{
+  width: 100%;
+}
+body{
+  padding-top: 5px;
+}
+.w-2{
+   width: 35%;
+}
+.w-3{ 
+    width: 37%;
+    height: 40px;
+    position: relative;
+}
+.w-4{ 
+  height: 30px;
+  padding: 7px;
+}
+.f-1{
+   font-size: 0.8rem;
+}
+.Left{
+  border: none;
+  padding-left: 5px;
+  padding-right: 5px;
+   border-left: 1px solid black;
+}
+.container{
+  width: 80%;
+  border-radius: 10px;
+  background-color: bisque;
+  display: flex;
+}
+.c1{
+    width: 55%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.c2{
+   width: 45%;
+}
+.f-2{
+   font-size: 2.5rem;
+}
+.f-3{
+  font-size: 1.2rem;
+}
+.inp{
+   width: 100%;
+   padding: 10px 20px;
+   border-radius:20px;
+}
+.c1-1{
+   width: 67%;
+   position: relative;
+}
+.inp-btn{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: lightgreen;
+    color: white;
+}
+.inp-1{
+   width: 100%;
+   height: 100%;
+}
+.inp-txt{
+   position: absolute;
+   left: 5px;
+   top: 10px;
+}
+.inp-txt1{
+  position: absolute;
+  left: 30%;
+  top: 10px;
+}
+.icon{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.box{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Head{
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+.f-4{
+   font-size: 0.9rem;
+}
+.cart{
+   width: 100px;
+   height: 150px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 5px;
+}
+.img-box{
+     width: 60px;
+     height: 60px;
+}
+.btn-1{
+   background-color: lightgreen;
+   padding: 5px 10px;
+   border-radius: 5px;
+   color: white;
+}
+.f-5{
+  font-weight: bolder;
+  font-size: 0.8rem;
+}
+.f-6{
+   font-size: 0.7rem;
+}
+
+.loading-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+ }
+ 
+ .loading-spinner {
+   border: 4px solid rgba(0, 0, 0, 0.3);
+   border-radius: 50%;
+   border-top: 4px solid #3498db;
+   width: 50px;
+   height: 50px;
+   animation: spin 1s linear infinite;
+ }
+ 
+ .loading-text {
+   margin-left: 10px;
+   font-size: 24px;
+   color: #3498db;
+ }
+ 
+ @keyframes spin {
+   0% {
+     transform: rotate(0deg);
+   }
+   100% {
+     transform: rotate(360deg);
+   }
+ }
+ 
